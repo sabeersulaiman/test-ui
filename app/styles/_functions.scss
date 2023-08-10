@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+$pixelVal: 16;
+@function pxrem($val) {
+    @return math.div($val, $pixelVal) * 1rem;
+}
+
+@function pxremActual($val) {
+    @return math.div($val, 14) * 1rem;
+}

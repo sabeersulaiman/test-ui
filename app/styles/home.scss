@@ -1,0 +1,49 @@
+@import "functions";
+
+$clrMain: #004c9d;
+
+body {
+  background: #fff;
+}
+
+.menu-container.home {
+  background: $clrMain;
+}
+
+.hero-wrapper {
+  background: $clrMain;
+  padding: pxrem(20) pxrem(30);
+  .hero-message {
+    padding: pxrem(50) 0;
+    h1 {
+      color: #fff;
+      font-size: pxrem(50);
+    }
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  .box {
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(#000, 0.17);
+    padding: pxrem(10) pxrem(20);
+    margin: pxrem(10);
+  }
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: pxrem(50);
+    .service {
+        padding: pxrem(20);
+        background: $clrMain;
+        margin: pxrem(20);
+        h1 {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test UI | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- build:css css/home.min.css -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home-res.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/tiny-slider/dist/tiny-slider.css"
+    />
+    <!-- endbuild -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+
+    <!--[if (lt IE 9)
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <section class="menu-container blue">
+      <a class="logo-link" href="index.html">
+        <div class="logo">
+          <h1>Vintage<br />Dreams</h1>
+        </div>
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn blue">Reach Out</button>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form-group">
+        <div class="form-item">
+          <label for="name">Name</label>
+          <input id="name" name="name" />
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input id="email" name="email" />
+        </div>
+        <div class="form-item">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Add your Query"
+          ></textarea>
+        </div>
+
+        <button class="btn blue">Submit Message</button>
+      </div>
+    </section>
+  </body>
+  <!-- build:js js/index.min.js -->
+  <script src="./js/home.js"></script>
+  <!-- endbuild -->
+</html>

@@ -1,0 +1,124 @@
+@import "functions";
+
+$ff: "Space Mono", sans-serif;
+
+$pixelVal: 14;
+
+$clrMain: #004c9d;
+
+* {
+  box-sizing: border-box;
+  font-family: $ff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $ff;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: $pixelVal * 1px;
+}
+
+.btn {
+  padding: pxrem(10) pxrem(20);
+  font-size: pxrem(20);
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  &.super {
+    color: $clrMain;
+  }
+  &.blue {
+    background: $clrMain;
+    color: #fff;
+  }
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: pxrem(20);
+  border-bottom: 1px solid #fff;
+  a.logo-link {
+    text-decoration: none;
+  }
+  .logo {
+    background: top left / auto 100% no-repeat url(/assets/car.svg);
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    h1 {
+      line-height: 1.1;
+      color: #fff;
+      margin-left: pxrem(80);
+      font-size: 20px;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      margin-left: 50px;
+      font-size: pxrem(18);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      a {
+        margin-right: 20px;
+        color: #fff;
+        &:visited,
+        &:active {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.blue {
+    border-bottom: 1px solid $clrMain;
+    .logo {
+      background: top left / auto 100% no-repeat url(/assets/car-blue.svg);
+      h1 {
+        color: $clrMain;
+      }
+    }
+    .menu {
+      ul {
+        a {
+          color: $clrMain;
+        }
+      }
+    }
+  }
+}
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: pxrem(150) pxrem(20);
+    .form-item {
+        margin-bottom: pxrem(20);
+        label {
+            display: block;
+            width: 100%;
+            font-size: pxrem(16);
+            font-weight: 700;
+            margin-bottom: pxrem(3);
+        }
+        input, textarea {
+            display: block;
+            border: 2px solid #dedede;
+            width: 100%;
+            font-size: pxrem(16);
+            padding: pxrem(5) pxrem(10);
+        }
+    }
+}
