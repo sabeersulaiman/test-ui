@@ -18,7 +18,7 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress with Percy
-        # uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v5
         env:
           PERCY_TOKEN: ${{ secrets.PERCYTOKEN }}
         run: percy exec -- cypress run
