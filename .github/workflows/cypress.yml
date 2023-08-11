@@ -22,4 +22,4 @@ jobs:
         with:
           build: npm run build
           start: npm run serve
-          command: percy exec -- cypress run
+          command: npm run percy-cypress
