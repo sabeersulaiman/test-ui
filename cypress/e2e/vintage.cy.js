@@ -3,6 +3,7 @@ describe('template spec', () => {
     cy.visit('http://localhost:3000/index.html')
 
     cy.get('.logo-link').should('be.visible')
+    cy.percySnapshot('Home Page', {widths: [800, 1080]})
   })
 
   it('should visit services page', () => {
@@ -10,6 +11,7 @@ describe('template spec', () => {
 
     cy.get('#service-link').click()
     cy.get('.services .service').should('have.length', 5)
+    cy.percySnapshot('Services Page', {widths: [800, 1080]})
   })
 
   it('should visit contacts page', () => {
@@ -20,5 +22,6 @@ describe('template spec', () => {
     cy.get('#message').type('Message from User....{enter}new line')
 
     cy.get('.form .btn.blue').should('be.visible')
+    cy.percySnapshot('Contacts Page', {widths: [800, 1080]})
   })
 })
